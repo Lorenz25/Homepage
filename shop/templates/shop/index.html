@@ -1,0 +1,19 @@
+{% extends 'shop/base.html' %}
+{% block content %}
+{% for item in item_list %}
+    <div class="row">
+        <div class="col-sm-12 title">
+            <h2>{{ item.title }}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 picture">
+            <img src="{{ item.picture.url }}"></img>
+        </div>
+        <div class="col-sm-6 description">
+            <p>{{ item.description }}</p>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}
+

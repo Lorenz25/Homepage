@@ -1,0 +1,7 @@
+body{
+    margin: 100px;
+}
+
+.picture img{
+    max-width: 700px;
+}
